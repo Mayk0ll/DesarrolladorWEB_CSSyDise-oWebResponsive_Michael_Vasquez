@@ -1,0 +1,290 @@
+body{
+  font-family: 'Dancing Script', arial;
+  background:  #02010a;
+  animation-name: animacionpag;
+  animation-duration: 1s;
+}
+
+header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  width: 900px;
+  margin: auto;
+}
+
+figcaption{
+  font-size: 1.25em;
+  color: black;
+}
+
+#hnt,.ContenedorPaisajes{
+  margin:auto;
+}
+
+#hnt, .links, .ContenedorPaisajes, .ContenedorRetratos{
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+}
+
+.titulo{
+  font-size: 2em;
+  text-align: left;
+  padding-left: 15px;
+}
+
+ .links{
+  padding-top: 8px;
+  font-size: 1.3em;
+}
+
+
+#hnt a:visited
+{
+  color: white;
+}
+.contenido, .ContenedorPaisajes, .ContenedorRetratos{
+    width: 900px;
+    margin: auto;
+}
+.contenido div{
+  text-align: center;
+}
+.links div{
+  margin-left: 30px;
+}
+.imgPpal{
+  background-color: #82c3a6;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.imgPpal img{
+  width: 95%;
+  margin: auto;
+}
+
+figure{
+  text-align: center;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+.contenedor, .contenedorfooter{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor{
+  background-color: #d5c75f;
+  width: 100%;
+}
+
+.invierno1, .invierno2{
+  width: 50%;
+}
+
+.invierno1 img, .invierno2 img{
+  border: 1px solid black;
+  width: 100%;
+  margin: auto;
+
+}
+
+.invierno1 img{
+transform: rotate(0deg);
+transition-property: transform;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+}
+
+.invierno1 img:hover{
+  transform: rotate(10deg);
+  border: 2px solid black;
+  box-shadow: 5px 5px #82c3a6;
+}
+
+.invierno2 img{
+  transform: translate(0px,0px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+
+.invierno2 img:hover{
+  transform: translate(20px,-5px);
+  border: 2px solid black;
+  box-shadow: 5px 5px #82c3a6;
+}
+
+footer{
+  border-radius: 0px 0px 10px 10px;
+  background: #C6d5c5;
+  width: 900px;
+  margin: auto;
+  font-size: 1.2em;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.contenedorfooter div{
+  width: 25%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.contenedorfooter ul{
+  text-align: left;
+}
+
+.ContenedorPaisajes div,.ContenedorRetratos div{
+  width: 33%;
+}
+
+.ContenedorPaisajes div:nth-child(even){
+  filter: grayscale(100%);
+}
+
+.ContenedorRetratos div:nth-child(even){
+  filter: grayscale(100%);
+}
+}
+
+.ContenedorPaisajes figure, .ContenedorRetratos figure{
+  width: 95%;
+  margin: auto;
+}
+
+.ContenedorPaisajes img, .ContenedorRetratos img{
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.ContenedorPaisajes{
+  background-color: #d5c75f;
+  margin: auto;
+}
+
+.im1 img{
+  filter: blur(10px);
+}
+
+.im3 img{
+  filter: sepia(90%);
+}
+
+.ge1 img{
+  filter: blur(10px);
+}
+
+.ge3 img{
+  filter: sepia(90%);
+}
+
+
+@keyframes animacionpag {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px){
+  .link1 a{
+    text-decoration: none;
+  }
+  .link2 a{
+    text-decoration: none;
+  }
+  .link3 a{
+    text-decoration: none;
+  }
+  .contenedorfooter div{
+    width: 25%;
+    text-align: center;
+  }
+  .links{
+    margin-left: auto;
+    padding-right: 50px;
+  }
+}
+
+
+@media (max-width: 899px){
+  header{
+    width: 100%;
+  }
+  .titulo, .links{
+    margin: auto;
+  }
+  .contenedor,.contenedorfooter,#hnt{
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+  }
+  .invierno1, .invierno2{
+    width: 100%;
+  }
+  .invierno1 img, .invierno2 img{
+    width: 100%;
+  }
+  .contenedorfooter div{
+    width: 100%;
+    text-align: center;
+  }
+  .contenido{
+    width: 100%;
+  }
+  .contenido div{
+    text-align: center;
+  }
+  .ContenedorPaisajes, .ContenedorRetratos{
+    margin: auto;
+    width: 100%;
+  }
+  .ContenedorPaisajes div, .ContenedorRetratos div{
+    width: 100%;
+    margin: auto;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+}
